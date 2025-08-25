@@ -1,26 +1,98 @@
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Your Name - Portfolio</title>
-       <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-       <header>
-           <h1>Your Name</h1>
-           <p>Welcome to my portfolio!</p>
-       </header>
-       <section>
-           <h2>Projects</h2>
-           <ul>
-               <li><a href="https://github.com/yourusername/project1">Project 1</a></li>
-               <li><a href="https://github.com/yourusername/project2">Project 2</a></li>
-           </ul>
-       </section>
-       <footer>
-           <p>Contact: your.email@example.com</p>
-       </footer>
-   </body>
-   </html>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProjectHub</title>
+  <style>
+    /* Background Gradient Animation */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      background: linear-gradient(270deg, #667eea, #764ba2, #6dd5ed, #2193b0);
+      background-size: 800% 800%;
+      animation: gradientBG 20s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Card Container */
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #6dd5ed;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #6dd5ed;
+    }
+
+    .email {
+      margin-top: 25px;
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ProjectHub</h1>
+    <p>Welcome to my portfolio!</p>
+    
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="#">Project 1</a></li>
+      <li><a href="#">Project 2</a></li>
+    </ul>
+    
+    <div class="email">srajputaniket@gmail.com</div>
+  </div>
+</body>
+</html>
+
+   
    
